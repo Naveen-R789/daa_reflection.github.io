@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pattern Searching</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f9bbec;
+        }
+        h1 {
+            color: #4CAF50;
+        }
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            color: white;
+            background-color: #007BFF;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        a:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pattern Searching</h1>
+    <p>In this topic, we explored various algorithms for pattern searching in strings. Pattern searching is the process of finding occurrences of a smaller string (the pattern) within a larger string (the text). Some key techniques include:</p>
+    <ul>
+        <li>Naive pattern searching algorithm.</li>
+        <li>Knuth-Morris-Pratt (KMP) algorithm.</li>
+        <li>Boyer-Moore algorithm.</li>
+        <li>Rabin-Karp algorithm.</li>
+    </ul>
+    <h2>Reflection Questions</h2>
+    <ol>
+        <li>What are the challenges in learning/understanding pattern searching?</li>
+        <p>Pattern searching can be complex because it requires understanding how different algorithms efficiently match substrings in a string. Each algorithm has its own strengths and weaknesses, depending on the length of the pattern and the text, which can make choosing the right approach challenging. Optimizing for time complexity is another difficulty, especially in cases of large datasets.</p>
+        <li>What are the challenges in correlating pattern searching with real-world applications?</li>
+        <p>In real-world applications, pattern searching is crucial in tasks like text processing, DNA sequence matching, and even searching within databases. The challenge lies in balancing efficiency with accuracy, especially when data is noisy or when searching in large, dynamic datasets. Some algorithms may require tuning based on specific requirements.</p>
+        <li>How do you determine the most efficient approach/design technique when solving a pattern searching problem?</li>
+        <p>To choose the most efficient approach, we must analyze the nature of the input data. For example, if the text and pattern are static, algorithms like the Boyer-Moore may be suitable due to its good worst-case performance. If the text is large and dynamic, the Knuth-Morris-Pratt algorithm could be more appropriate. Profiling different algorithms in specific contexts can help identify the optimal solution.</p>
+    </ol>
+    <a href="index.html">Back to DAA Lab Reflection</a>
+</body>
+</html>
