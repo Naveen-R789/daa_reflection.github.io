@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAA Lab Reflection</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: hwb(300 74% 3%);
+            margin: 0;
+            padding: 0;
+        }
+        header {
+    background: linear-gradient(135deg, #183bd7, #4e6986);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+/* Header Title */
+header h1 {
+    font-size: 3em;
+    font-weight: 700;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: 'Arial', sans-serif;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Subheading or tagline */
+header p {
+    font-size: 1.2em;
+    font-weight: 300;
+    margin-top: 10px;
+    font-family: 'Verdana', sans-serif;
+    opacity: 0.8;
+    letter-spacing: 0.5px;
+}
+
+/* Sticky Header Effect */
+header.sticky {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Header Logo (if applicable) */
+header .logo {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2em;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: rgb(249, 249, 249);
+}
+
+/* Navigation bar inside the header */
+header nav {
+    margin-top: 20px;
+}
+
+/* Styling the Navigation Links */
+header nav a {
+    color: white;
+    font-size: 1.2em;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 10px;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+}
+
+/* Navigation Link Hover Effect */
+header nav a:hover {
+    color: #f1f1f1;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+/* Sticky Header Animation (when it becomes sticky) */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        /* General Button Styling */
+button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: 2px solid transparent;
+    border-radius: 50px;
+    background: linear-gradient(45deg, #007bff, #00c6ff);
+    color: white;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+/* Hover effect and glowing border */
+button:hover {
+    background: linear-gradient(45deg, #d1d9d9, #f6f6f7);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+}
+
+/* Button before pseudo-element for liquid effect */
+button::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    transition: all 0.4s ease;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+/* On hover, show the liquid effect */
+button:hover::before {
+    width: 0;
+    height: 0;
+    opacity: 1;
+}
+
+/* Focused state (when button is clicked or focused) */
+button:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.8);
+}
+
+/* Active state (when the button is being pressed) */
+button:active {
+    transform: scale(0.98);
+    box-shadow: none;
+    transition: all 0.1s ease;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>DAA Lab Reflection</h1>
+    </header>
+    <div class="info">
+        <p><strong>Name:</strong> Naveen Rajdev</p>
+        <p><strong>Div:</strong> F</p>
+        <p><strong>Roll:</strong> 129</p>
+    </div>
+    <div class="button-container">
+        <button onclick="location.href='time_complexity_analysis.html'">Time Complexity Analysis</button>
+        <button onclick="location.href='binary_search_tree.html'">Binary Search Tree</button>
+        <button onclick="location.href='dfs_bfs.html'">DFS and BFS</button>
+        <button onclick="location.href='heap.html'">Heap</button>
+        <button onclick="location.href='sorting.html'">Sorting</button>
+        <button onclick="location.href='pattern_searching.html'">Pattern Searching</button>
+        <button onclick="location.href='graph_algorithms.html'">Graph Algorithms</button>
+    </div>
+</body>
+</html>
